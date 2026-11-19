@@ -15,9 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download SEGA Japan song data
-        run: curl -fL https://maimai.sega.jp/data/maimai_songs.json -o maimai_songs.json
-      - run: mkdir public && cp index.html maimai_songs.json public/
+      - name: Prepare single-file site (JSON is embedded in index.html)
+        run: mkdir public && cp index.html public/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
