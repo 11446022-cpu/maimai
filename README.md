@@ -1,6 +1,6 @@
 # maimai 日本版樂曲資料庫
 
-網站包含案例背景、ERD／欄位設計、可編輯並執行的 SQLite SELECT／WITH 查詢、SQL 結果比較及歌曲搜尋篩選。
+網站為提供使用者進行查詢/篩選樂曲作為使用
 
 GitHub Actions 在部署時會下載 SEGA 日本版官方現行資料 https://maimai.sega.jp/data/maimai_songs.json，再部署到 GitHub Pages。現行資料快照不保證包含已刪除歌曲；來源未提供的譜面作者及日期不會自行補造。
 
